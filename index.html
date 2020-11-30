@@ -4,9 +4,8 @@
 <head>
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <style id="myStyle">
         .button:hover {
             color: var(--main_color)
@@ -14,43 +13,24 @@
     </style>
 </head>
 
-<body>
-    <div class="container background1">
+<body onload="displayTime();">
+  <img style="opacity: 0" class="bg" src=""></img>
+  <div id="player"></div>
+  <div class="container background1">
     </div>
     <div class="container background2">
     </div>
     <div class="container">
         <div class="clock_container">
             <div class="maincontent">
-                <h2> Input countdown duration </h2>
-                <form action='' method='POST' enctype='multipart/form-data'>
-                    <div class="row">
-                        <input class="seethrough_form col_50" type="text" placeholder="minutes" id="myMinutes">
-                        <input class="seethrough_form col_50" type="text" placeholder="seconds" id="mySeconds">
-                    </div>
-                    <div class="specialOptions">
-                        <div class="row">
-                            <input class="seethrough_form col_50" type="text" placeholder="link for video" id="myVideoLink">
-                            <input class="seethrough_form col_50" type="text" placeholder="link for image" id="myImage">
-                        </div>
-                    </div>
-                </form>
-                <div class="buttons">
-                    <button class="specialButton" type="button" onClick="showSpecial()">More</button>
-                    <button class="button" type="button" onClick="time()">Submit</button>
+                <div id="divCont">
+                <h1 id="text">A wild christmas Nuven appeared</h1>
+                <img id="nuven" src="Backgrounds/129017524_227591465457241_831600987038703167_n.jpg" alt="129017524_227591465457241_831600987038703167_n" srcset="" >
                 </div>
+                <span id="time">00:00</span><br>
+
             </div>
         </div>
     </div>
-    <div id="info">
-        <div class="informationBox">
-            <h4 style="margin-bottom: 2px;">Check me out in github:</h4>
-            <p style="margin-top: 2px;"><a href="https://github.com/Aaronkala/countdown-timer">github // countdown-timer</a></p>
-            <p>This project was made by <a href="http://aaronalex.fi"><strong>Aaron Hakala</strong></a></p>
-            <p><a onclick="fillTest()">Fill form with test data</a><p>
-        </div>
-        <i class="fa fa-info-circle fa-2x" aria-hidden="true" onclick="information()" id="infoButton"></i>
-    </div>
 </body>
-
 </html>
