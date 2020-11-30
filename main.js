@@ -87,6 +87,7 @@ function displayTime() {
 function showNuven() {
     var nuvenImage = document.getElementById("nuven");
     var nuvenText = document.getElementById("text");
+    nuvenImage.src = "Backgrounds/129017524_227591465457241_831600987038703167_n.jpg";
     nuvenText.style.display ="block";
     nuvenImage.style.display ="inline";
 
@@ -157,8 +158,6 @@ setInterval(function () {
     active++;
     if (active == colorGradient.length) active = 0;
 }, 20000);
-
-
 
 
 // Find the right method, call on correct element
